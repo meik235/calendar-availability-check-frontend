@@ -10,7 +10,7 @@ export const LABEL = {
 	BUSY_SLOT: "Busy Slots",
 	SLOT_STATUS: "Slot Status",
 	START: "Start",
-	END: "END",
+	END: "End",
 };
 
 export const ERROR_MESSAGE = {
