@@ -1,0 +1,49 @@
+{
+	"compilerOptions": {
+		"target": "ESNext",
+		"lib": ["dom", "dom.iterable", "esnext"],
+		"allowJs": true,
+		"skipLibCheck": true,
+		"strict": true,
+		"forceConsistentCasingInFileNames": true,
+		"noEmit": true,
+		"incremental": true,
+		"esModuleInterop": true,
+		"module": "esnext",
+		"moduleResolution": "node",
+		"resolveJsonModule": true,
+		"isolatedModules": true,
+		"jsx": "preserve",
+		"strictPropertyInitialization": false,
+		"experimentalDecorators": true,
+		"emitDecoratorMetadata": true,
+		"strictNullChecks": true,
+		"rootDir": ".",
+		"baseUrl": "./",
+		"paths": {
+			"@/*": ["./*"],
+			"@nm/*": ["node_modules/*"],
+			"@store/*": ["src/store/*"],
+			"utils/*": ["/utils/*"],
+			"@utils": ["src/utils/index.tsx"],
+			"@app/*": ["app/*"],
+			"@rs/*": ["src/reactiveServices/*"],
+			"@c/*": ["src/components/*"],
+			"@cc/*": ["src/customComponents/*"]
+		},
+		"plugins": [
+			{
+				"name": "next"
+			}
+		],
+		"types": ["reflect-metadata"]
+	},
+	"include": [
+		"next-env.d.ts",
+		"**/*.ts",
+		"**/*.tsx",
+		".next/types/**/*.ts",
+		"components/userProvider/index.js"
+	],
+	"exclude": ["node_modules"]
+}
