@@ -53,6 +53,12 @@ const HomePage: React.FC<IHomePageProps> = ({ expertListData }) => {
 		}
 	}, [expertListData]);
 
+	useEffect(() => {
+		setFreeSlots([]);
+		setBusySlots([]);
+		setSlotStatus("");
+	}, [startDateTime, endDateTime, currentExpert]);
+
 	const handleStartDateTime = (value: Date | null) => {
 		if (!value) return;
 		setStartDateTime(value);
